@@ -1,0 +1,8 @@
+# Add patterns to ignore here, one per line
+# Example:
+# *.log
+# tmp/
+dist/
+node_modules/
+examples/next-app/node_modules/
+src/stories/
