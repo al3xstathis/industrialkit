@@ -5,7 +5,7 @@ import {
   SplitView,
   SplitViewPanel,
   TimeSeries,
-} from "industrydb";
+} from "industrialkit";
 
 // Helper function to generate sample time series data
 function generateTimeData(points: number) {

@@ -1,5 +1,5 @@
 "use client";
-import { Panel, PanelRow, StatusIndicator } from "industrydb";
+import { Panel, PanelRow, StatusIndicator } from "industrialkit";
 
 export function SystemStats() {
   return (

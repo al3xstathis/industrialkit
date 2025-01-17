@@ -20,7 +20,7 @@ import {
   TabPanel,
   Tabs,
   TimeSeries,
-} from "industrydb";
+} from "industrialkit";
 import { useState } from "react";
 
 // Helper function to generate sample time series data

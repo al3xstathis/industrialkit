@@ -1,5 +1,5 @@
 "use client";
-import { ToastProvider } from "industrydb";
+import { ToastProvider } from "industrialkit";
 
 export default function Providers({
   children,

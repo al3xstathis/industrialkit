@@ -10,7 +10,7 @@ import {
   SplitViewPanel,
   TimeSeries,
   useToast,
-} from "industrydb";
+} from "industrialkit";
 
 // Mock data generator
 function generateTimeData(points: number) {

@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "industrydb": "file:../..",
+    "industrialkit": "file:../..",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "next": "15.1.4"

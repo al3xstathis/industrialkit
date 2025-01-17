@@ -18,7 +18,7 @@ import {
   Terminal,
   TimeSeries,
   useToast,
-} from "industrydb";
+} from "industrialkit";
 import { useState } from "react";
 
 // Sample log entry type

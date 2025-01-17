@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "industrydb";
+import { cn } from "industrialkit";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

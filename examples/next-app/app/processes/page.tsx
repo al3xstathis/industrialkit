@@ -1,5 +1,5 @@
 "use client";
-import { Button, DataGrid, StatusIndicator } from "industrydb";
+import { Button, DataGrid, StatusIndicator } from "industrialkit";
 
 export default function ProcessesPage() {
   return (

@@ -1,6 +1,6 @@
 {
-  "name": "industrydb",
-  "version": "1.0.0",
+  "name": "industrialkit",
+  "version": "0.0.1",
   "private": false,
   "workspaces": [
     "examples/*"

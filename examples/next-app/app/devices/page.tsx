@@ -21,7 +21,7 @@ import {
   Switch,
   Terminal,
   TimeSeries,
-} from "industrydb";
+} from "industrialkit";
 import { useState } from "react";
 
 // Helper for sample data

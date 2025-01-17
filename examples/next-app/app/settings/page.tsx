@@ -23,7 +23,7 @@ import {
   Tabs,
   Terminal,
   useToast,
-} from "industrydb";
+} from "industrialkit";
 import { useState } from "react";
 
 export default function SettingsPage() {

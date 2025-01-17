@@ -161,6 +161,22 @@ export const Terminal: Story = {
   ),
 };
 
+export const SingleSelect: Story = {
+  render: () => {
+    const [selectedRows, setSelectedRows] = useState<Product[]>([]);
+
+    return (
+      <DataGrid
+        columns={columns}
+        data={sampleData}
+        selectable
+        selectMode="single"
+        onRowSelect={setSelectedRows}
+      />
+    );
+  },
+};
+
 export const InContext: Story = {
   render: () => {
     const [selectedRows, setSelectedRows] = useState<Product[]>([]);

@@ -9,6 +9,8 @@ export interface InputProps {
   suffix?: React.ReactNode;
   className?: string;
   wrapperClassName?: string;
+  placeholder?: string;
+  disabled?: boolean;
 }
 
 // Use intersection type to combine with HTML input attributes
@@ -159,7 +161,7 @@ const NumericInput = React.forwardRef<HTMLInputElement, NumericInputProps>(
     const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
       // Allow: backspace, delete, tab, escape, enter
       if (
-        [8, 46, 9, 27, 13].indexOf(e.keyCode) !== -1 ||
+        [8, 46, 9, 27, 13, 38, 40].indexOf(e.keyCode) !== -1 || // Added 38, 40
         // Allow: Ctrl+A
         (e.keyCode === 65 && e.ctrlKey === true) ||
         // Allow: home, end, left, right
