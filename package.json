@@ -1,66 +1,23 @@
 {
-  "name": "industrialkit",
-  "version": "0.0.2",
-  "private": false,
+  "name": "industrialkit-monorepo",
+  "private": true,
   "workspaces": [
-    "examples/*",
+    "packages/*",
     "apps/*"
   ],
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "plugin.js"
-  ],
-  "packageManager": "npm@10.4.0",
   "scripts": {
-    "dev:lib": "tsup --watch",
+    "dev": "turbo dev",
     "build": "turbo build",
-    "build:lib": "tsup",
-    "dev": "concurrently \"npm run dev:lib\" \"npm run storybook\"",
-    "demo:next": "npm run dev --workspace=examples/next-app",
-    "docs": "npm run dev --workspace=apps/docs",
-    "demo:storybook": "npm run dev",
-    "release": "npm run build && changeset publish",
-    "repomix": "repomix --ignore \"examples/next-app/node_modules/\"",
-    "build-storybook": "storybook build",
-    "storybook": "storybook dev -p 6006"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "autoprefixer": "^10.4.20",
-    "chart.js": "^4.4.7",
-    "clsx": "^2.1.1",
-    "concurrently": "^9.1.2",
-    "date-fns": "^4.1.0",
-    "postcss": "^8.5.1",
-    "react": "^19.0.0",
-    "react-chartjs-2": "^5.3.0",
-    "react-dom": "^19.0.0",
-    "tailwind-merge": "^2.6.0"
+    "clean": "turbo clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo lint",
+    "test": "turbo test"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.11",
-    "@chromatic-com/storybook": "^3.2.3",
-    "@storybook/addon-docs": "^8.4.7",
-    "@storybook/addon-essentials": "^8.4.7",
-    "@storybook/addon-interactions": "^8.4.7",
-    "@storybook/addon-onboarding": "^8.4.7",
-    "@storybook/addon-styling-webpack": "^1.0.1",
-    "@storybook/blocks": "^8.4.7",
-    "@storybook/react": "^8.4.7",
-    "@storybook/react-vite": "^8.4.7",
-    "@storybook/test": "^8.4.7",
-    "@types/node": "^22.10.6",
-    "@types/react": "^19.0.7",
-    "@types/react-dom": "^19.0.3",
-    "storybook": "^8.4.7",
-    "tailwindcss": "^3.4.17",
-    "tsup": "^8.3.5",
-    "turbo": "^2.3.3",
-    "typescript": "^5.7.3"
-  }
+    "@changesets/cli": "^2.27.1",
+    "prettier": "^3.0.0",
+    "turbo": "^1.10.0",
+    "typescript": "^5.0.0"
+  },
+  "packageManager": "npm@10.4.0"
 }
