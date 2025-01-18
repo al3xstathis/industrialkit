@@ -1,4 +1,4 @@
 {
-  "buildCommand": "cd apps/docs && npm run build",
+  "buildCommand": "npm run build",
   "outputDirectory": "apps/docs/.next"
 }
