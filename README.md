@@ -1,4 +1,4 @@
-# IndustrialKit
+# Industrial Kit
 
 IndustrialKit is a comprehensive React component library designed specifically for building modern industrial and enterprise applications. It provides a collection of robust, performance-optimized components with a focus on monitoring, control systems, and data visualization interfaces.
 
