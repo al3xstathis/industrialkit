@@ -1,6 +1,6 @@
-# IndustryDB
+# IndustrialKit
 
-IndustryDB is a comprehensive React component library designed specifically for building modern industrial and enterprise applications. It provides a collection of robust, performance-optimized components with a focus on monitoring, control systems, and data visualization interfaces.
+IndustrialKit is a comprehensive React component library designed specifically for building modern industrial and enterprise applications. It provides a collection of robust, performance-optimized components with a focus on monitoring, control systems, and data visualization interfaces.
 
 ## Features
 
@@ -20,7 +20,7 @@ IndustryDB is a comprehensive React component library designed specifically for 
 ## Installation
 
 ```bash
-npm install industrydb
+npm install industrialkit
 ```
 
 ## Basic Setup
@@ -31,10 +31,10 @@ Add the plugin to your `tailwind.config.js`:
 module.exports = {
   content: [
     // ...
-    "node_modules/industrydb/dist/**/*.{js,mjs}"
+    "node_modules/industrialkit/dist/**/*.{js,mjs}"
   ],
   plugins: [
-    require('industrydb/plugin')
+    require('industrialkit/plugin')
   ]
 }
 ```
@@ -49,7 +49,7 @@ import {
   DataGrid,
   TimeSeries,
   StatusIndicator
-} from 'industrydb'
+} from 'industrialkit'
 
 function MonitoringDashboard() {
   return (

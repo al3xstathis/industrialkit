@@ -1,6 +1,6 @@
+import { Header } from "@/components/header";
 import Navigation from "@/components/navigation";
 import "@/styles/globals.css";
-import { Header } from "@/components/header";
 import type { Metadata } from "next";
 import Providers from "./providers";
 
@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className="flex h-full flex-col">
         <Providers>
-          <Header title="IndustrialKit" subtitle="Documentation" />
+          <Header/>
           <div className="flex flex-1 overflow-hidden">
             <Navigation />
             <main className="flex-1 overflow-auto">
