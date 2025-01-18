@@ -186,12 +186,14 @@ export default function AlarmsPage() {
                   ]}
                   data={[
                     {
+                      id: "ALM001",
                       time: "10:30:00",
                       severity: "Critical",
                       message: "CPU Usage exceeded threshold (95%)",
                       duration: "5m 30s",
                     },
                     {
+                      id: "ALM002",
                       time: "10:25:00",
                       severity: "Warning",
                       message: "Memory usage approaching limit",

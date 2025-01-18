@@ -16,7 +16,8 @@
   "packageManager": "npm@10.4.0",
   "scripts": {
     "dev:lib": "tsup --watch",
-    "build": "tsup",
+    "build": "turbo build",
+    "build:lib": "tsup",
     "dev": "concurrently \"npm run dev:lib\" \"npm run storybook\"",
     "demo:next": "npm run dev --workspace=examples/next-app",
     "docs": "npm run dev --workspace=apps/docs",
