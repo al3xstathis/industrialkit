@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": false,
   "workspaces": [
-    "examples/*"
+    "examples/*",
+    "apps/*"
   ],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -12,15 +13,16 @@
     "dist",
     "plugin.js"
   ],
+  "packageManager": "npm@10.4.0",
   "scripts": {
     "dev:lib": "tsup --watch",
     "build": "tsup",
     "dev": "concurrently \"npm run dev:lib\" \"npm run storybook\"",
     "demo:next": "npm run dev --workspace=examples/next-app",
+    "docs": "npm run dev --workspace=apps/docs",
     "demo:storybook": "npm run dev",
     "release": "npm run build && changeset publish",
     "repomix": "repomix --ignore \"examples/next-app/node_modules/\"",
-    "docs": "ts-node scripts/generate-docs.ts",
     "build-storybook": "storybook build",
     "storybook": "storybook dev -p 6006"
   },
@@ -57,6 +59,7 @@
     "storybook": "^8.4.7",
     "tailwindcss": "^3.4.17",
     "tsup": "^8.3.5",
+    "turbo": "^2.3.3",
     "typescript": "^5.7.3"
   }
 }

@@ -106,7 +106,7 @@ const Terminal = React.forwardRef<HTMLDivElement, TerminalProps>(
               key={index}
               content={line}
               highlight={highlightLines.includes(index)}
-              prefix={line.startsWith(">") ? ">" : "$"}
+              prefix={line?.startsWith(">") ? ">" : "$"}
             />
           ))}
           {loading && (

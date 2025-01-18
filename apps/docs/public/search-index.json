@@ -1,0 +1,36 @@
+[
+  {
+    "id": "button",
+    "title": "Button Component",
+    "content": "\n# Button Component\n\nThe Button component is a fundamental building block for user interactions.\n\n## Usage\n\n```tsx\nimport { Button } from 'industrialkit'\n\nfunction Example() {\n  return (\n    <Button v",
+    "url": "/components/button",
+    "type": "component",
+    "description": "A versatile button component with multiple variants and sizes",
+    "tags": [
+      "core",
+      "forms",
+      "actions"
+    ],
+    "categories": [
+      "components"
+    ],
+    "lastUpdated": "2025-01-17T20:12:58.696Z"
+  },
+  {
+    "id": "getting-started",
+    "title": "Getting Started",
+    "content": "\n# Getting Started\n\nWelcome to IndustrialKit! This guide will help you get started with the library.\n\n## Installation\n\n```bash\nnpm install industrialkit\n```\n\n## Basic Setup\n\nAdd the plugin to your `ta",
+    "url": "/guides/getting-started",
+    "type": "guide",
+    "description": "Learn how to install and set up IndustrialKit",
+    "tags": [
+      "setup",
+      "installation"
+    ],
+    "categories": [
+      "guides"
+    ],
+    "weight": 1,
+    "lastUpdated": "2025-01-17T20:12:58.696Z"
+  }
+]

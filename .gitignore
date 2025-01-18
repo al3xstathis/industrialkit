@@ -12,6 +12,7 @@ build
 # Development
 .next
 out
+.turbo
 
 # Misc
 .DS_Store
