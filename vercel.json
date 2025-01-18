@@ -1,6 +1,4 @@
 {
-  "buildCommand": "turbo build",
-  "installCommand": "npm install",
-  "framework": "nextjs",
+  "buildCommand": "cd apps/docs && npm run build",
   "outputDirectory": "apps/docs/.next"
 }
