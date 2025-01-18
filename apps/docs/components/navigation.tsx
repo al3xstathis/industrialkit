@@ -95,15 +95,11 @@ export default function Navigation() {
       {/* Mobile Nav Toggle */}
       <Button
         variant="default"
-        size="icon"
+        size="md"
         className="fixed right-4 top-4 z-50 lg:hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {isOpen ? (
-          <X className="h-5 w-5" />
-        ) : (
-          <Menu className="h-5 w-5" />
-        )}
+        {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
       </Button>
 
       {/* Mobile Nav Overlay */}

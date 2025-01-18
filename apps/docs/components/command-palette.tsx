@@ -1,8 +1,8 @@
 "use client";
-import { Command } from "lucide-react";
+import { cn } from "industrialkit";
+import { Search } from "lucide-react";
 import * as React from "react";
 import { createPortal } from "react-dom";
-import { cn } from "industrialkit";
 
 type CommandPaletteProps = {
   isOpen: boolean;
@@ -72,13 +72,13 @@ function CommandPalette({
       <div
         className={cn(
           "fixed inset-x-0 top-24 z-50 mx-auto max-w-2xl transform px-4 transition-all duration-200",
-          isOpen ? "translate-y-0 opacity-100" : "-translate-y-4 opacity-0 pointer-events-none"
+          isOpen ? "translate-y-0 opacity-100" : "-translate-y-4 opacity-0 pointer-events-none",
         )}
       >
         <div className="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-xl">
           <div className="border-b border-gray-200 px-3 py-4">
             <div className="flex items-center gap-3">
-              <Command className="h-5 w-5 text-gray-400" />
+              <Search size={16} />
               <input
                 ref={inputRef}
                 className="flex-1 bg-transparent text-base outline-none placeholder:text-gray-400"
@@ -88,9 +88,7 @@ function CommandPalette({
               />
             </div>
           </div>
-          <div className="max-h-[60vh] overflow-y-auto p-2">
-            {children}
-          </div>
+          <div className="max-h-[60vh] overflow-y-auto p-2">{children}</div>
         </div>
       </div>
     </>
@@ -107,9 +105,7 @@ function CommandGroup({ heading, children }: CommandGroupProps) {
           {heading}
         </div>
       )}
-      <div className="space-y-1">
-        {children}
-      </div>
+      <div className="space-y-1">{children}</div>
     </div>
   );
 }
@@ -121,10 +117,14 @@ function CommandItem({ onSelect, icon, children, className }: CommandItemProps) 
       className={cn(
         "flex w-full items-center gap-3 rounded-md px-3 py-2 text-left text-sm text-gray-900",
         "hover:bg-gray-100 focus:bg-gray-100 focus:outline-none",
-        className
+        className,
       )}
     >
-      {icon && <span className="flex h-5 w-5 items-center justify-center">{icon}</span>}
+      {icon && (
+        <span className="flex h-5 w-5 items-center justify-center">
+          {icon}
+        </span>
+      )}
       {children}
     </button>
   );

@@ -1,6 +1,6 @@
 'use client'
-import { Input, NumericInput, SearchInput, Textarea } from "industrialkit";
 import { ExampleCard } from "@/components/example-card";
+import { Input, NumericInput, SearchInput, Textarea } from "industrialkit";
 
 export default function InputPage() {
   return (
@@ -55,12 +55,12 @@ export default function SpecializedExample() {
         max={100}
         step={0.5}
       />
-      
+
       <SearchInput
         placeholder="Search..."
         onSearch={(value) => console.log('Search:', value)}
       />
-      
+
       <Textarea
         placeholder="Enter multiple lines of text"
         rows={4}
@@ -76,12 +76,12 @@ export default function SpecializedExample() {
               max={100}
               step={0.5}
             />
-            
+
             <SearchInput
               placeholder="Search..."
               onSearch={(value) => console.log('Search:', value)}
             />
-            
+
             <Textarea
               placeholder="Enter multiple lines of text"
               rows={4}
@@ -118,7 +118,7 @@ export default function StatesExample() {
 
       <div className="space-y-4">
         <h2 className="text-2xl font-bold">API Reference</h2>
-        
+
         <div>
           <h3 className="text-xl font-bold mb-4">Input Props</h3>
           <div className="overflow-x-auto">
@@ -218,7 +218,7 @@ export default function StatesExample() {
               <tbody>
                 <tr className="border-b">
                   <td className="px-4 py-2 font-mono">onSearch</td>
-                  <td className="px-4 py-2 font-mono">(value: string) => void</td>
+                  <td className="px-4 py-2 font-mono">(value: string) ={'>'} void</td>
                   <td className="px-4 py-2 font-mono">-</td>
                   <td className="px-4 py-2">Search callback</td>
                 </tr>

@@ -1,7 +1,7 @@
 "use client";
 import type { SearchResult } from "@/app/api/search/route";
 import { CommandPalette } from "@/components/command-palette";
-import { Book, Component, Search, Wrench } from "lucide-react";
+import { BookOpen, Package, Search, Wrench } from "lucide-react";
 import { useRouter } from "next/navigation";
 import * as React from "react";
 import { useSearchIndex } from "./use-search";
@@ -25,7 +25,6 @@ export function SearchDialog() {
     return () => document.removeEventListener("keydown", down);
   }, []);
 
-  // Handle search changes
   React.useEffect(() => {
     const searchDocs = async () => {
       if (!search.trim()) {
@@ -39,7 +38,6 @@ export function SearchDialog() {
     searchDocs();
   }, [search, performSearch]);
 
-  // Group results by type
   const groups = React.useMemo(() => {
     return {
       Components: results.filter((r) => r.type === "component"),
@@ -48,14 +46,16 @@ export function SearchDialog() {
     };
   }, [results]);
 
-  const getIcon = (type: SearchResult["type"]) => {
+  const getIcon = (type: SearchResult["type"]): React.ReactNode => {
     switch (type) {
       case "component":
-        return <Component className="h-4 w-4" />;
+        return <Package size={16} />;
       case "guide":
-        return <Book className="h-4 w-4" />;
+        return <BookOpen size={16} />;
       case "api":
-        return <Wrench className="h-4 w-4" />;
+        return <Wrench size={16} />;
+      default:
+        return null;
     }
   };
 
@@ -65,7 +65,7 @@ export function SearchDialog() {
         onClick={() => setOpen(true)}
         className="group flex items-center gap-2 rounded-full bg-gray-100 px-4 py-1.5 text-sm text-gray-500 transition-colors hover:bg-gray-200"
       >
-        <Search className="h-4 w-4" />
+        <Search size={16} />
         <span>Search docs...</span>
         <span className="ml-2 hidden rounded-md border border-gray-300 bg-white px-1.5 text-xs group-hover:border-gray-400 md:block">
           ⌘K
@@ -107,7 +107,7 @@ export function SearchDialog() {
                   </CommandPalette.Item>
                 ))}
               </CommandPalette.Group>
-            ) : null
+            ) : null,
           )
         ) : search ? (
           <div className="flex items-center justify-center py-8">

@@ -1,6 +1,6 @@
 'use client'
-import { SplitView, SplitViewPanel, Button } from "industrialkit";
 import { ExampleCard } from "@/components/example-card";
+import { SplitView, SplitViewPanel } from "industrialkit";
 
 export default function SplitViewPage() {
   return (
@@ -151,7 +151,7 @@ export default function TerminalExample() {
                   title="COMMAND OUTPUT"
                 >
                   <div className="p-4 text-green-400">
-                    > Ready for input
+                    {">"} Ready for input
                   </div>
                 </SplitViewPanel>
               }
@@ -162,7 +162,7 @@ export default function TerminalExample() {
 
       <div className="space-y-4">
         <h2 className="text-2xl font-bold">API Reference</h2>
-        
+
         <div>
           <h3 className="text-xl font-bold mb-4">SplitView Props</h3>
           <div className="overflow-x-auto">

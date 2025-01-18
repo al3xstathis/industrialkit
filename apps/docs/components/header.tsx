@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "industrialkit";
-import { Github } from "lucide-react";
+import { GithubIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -67,7 +67,7 @@ export function Header() {
             rel="noopener noreferrer"
             className="rounded-lg p-2 text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-900"
           >
-            <Github className="h-5 w-5" />
+            <GithubIcon size={24} />
           </a>
         </div>
       </div>

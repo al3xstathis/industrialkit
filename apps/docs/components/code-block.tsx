@@ -38,9 +38,9 @@ export function CodeBlock({
             className="opacity-0 group-hover:opacity-100"
           >
             {copied ? (
-              <Check className="h-4 w-4" />
+              <Check size={16} />
             ) : (
-              <Copy className="h-4 w-4" />
+              <Copy size={16} />
             )}
           </Button>
         </div>

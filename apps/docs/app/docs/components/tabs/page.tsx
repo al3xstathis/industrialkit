@@ -1,6 +1,6 @@
 'use client'
-import { Tabs, TabList, Tab, TabPanel } from "industrialkit";
 import { ExampleCard } from "@/components/example-card";
+import { Tab, TabList, TabPanel, Tabs } from "industrialkit";
 
 export default function TabsPage() {
   return (
@@ -28,7 +28,7 @@ export default function BasicExample() {
         <Tab value="tab2">Settings</Tab>
         <Tab value="tab3">Logs</Tab>
       </TabList>
-      
+
       <TabPanel value="tab1">
         System overview content
       </TabPanel>
@@ -48,7 +48,7 @@ export default function BasicExample() {
               <Tab value="tab2">Settings</Tab>
               <Tab value="tab3">Logs</Tab>
             </TabList>
-            
+
             <TabPanel value="tab1">
               System overview content
             </TabPanel>
@@ -76,7 +76,7 @@ export default function DisabledExample() {
           Admin
         </Tab>
       </TabList>
-      
+
       <TabPanel value="home">
         Home content
       </TabPanel>
@@ -98,7 +98,7 @@ export default function DisabledExample() {
                 Admin
               </Tab>
             </TabList>
-            
+
             <TabPanel value="home">
               Home content
             </TabPanel>
@@ -124,7 +124,7 @@ export default function TerminalExample() {
         <Tab value="config">CONFIG</Tab>
         <Tab value="logs">LOGS</Tab>
       </TabList>
-      
+
       <TabPanel value="status">
         <div className="text-green-400">System status: RUNNING</div>
       </TabPanel>
@@ -144,7 +144,7 @@ export default function TerminalExample() {
               <Tab value="config">CONFIG</Tab>
               <Tab value="logs">LOGS</Tab>
             </TabList>
-            
+
             <TabPanel value="status">
               <div className="text-green-400">System status: RUNNING</div>
             </TabPanel>
@@ -160,7 +160,7 @@ export default function TerminalExample() {
 
       <div className="space-y-4">
         <h2 className="text-2xl font-bold">API Reference</h2>
-        
+
         <div>
           <h3 className="text-xl font-bold mb-4">Tabs Props</h3>
           <div className="overflow-x-auto">
@@ -188,7 +188,7 @@ export default function TerminalExample() {
                 </tr>
                 <tr className="border-b">
                   <td className="px-4 py-2 font-mono">onValueChange</td>
-                  <td className="px-4 py-2 font-mono">(value: string) => void</td>
+                  <td className="px-4 py-2 font-mono">(value: string) ={">"} void</td>
                   <td className="px-4 py-2 font-mono">-</td>
                   <td className="px-4 py-2">Change callback</td>
                 </tr>
